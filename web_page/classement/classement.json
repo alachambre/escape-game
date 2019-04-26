@@ -2,55 +2,19 @@
   "designerVersion" : "1.9.31",
   "id" : "classement",
   "name" : "classement",
-  "lastUpdate" : 1555659776881,
+  "lastUpdate" : 1556281714229,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
       "xs" : 12,
       "sm" : 12,
-      "md" : 2,
-      "lg" : 2
-    },
-    "propertyValues" : {
-      "cssClasses" : {
-        "type" : "constant",
-        "value" : ""
-      },
-      "hidden" : {
-        "type" : "constant",
-        "value" : false
-      },
-      "srcType" : {
-        "type" : "constant",
-        "value" : "Asset"
-      },
-      "url" : {
-        "type" : "constant",
-        "value" : "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjv65qvzNvhAhVRPBoKHfBUDEAQjRx6BAgBEAU&url=https%3A%2F%2Fcmit.fr%2Fentreprises-adherentes%2Fbonitasoft%2Fattachment%2Fbonitasoft-vertical%2F&psig=AOvVaw2ZjDLF6lwoqnD-aJAV57ob&ust=1555744047619889"
-      },
-      "assetName" : {
-        "type" : "constant",
-        "value" : "images.png"
-      },
-      "alt" : {
-        "type" : "interpolation"
-      }
-    },
-    "reference" : "40dc8965-b742-49cc-9d14-2dd549daf1f2",
-    "hasValidationError" : false,
-    "id" : "pbImage"
-  }, {
-    "type" : "component",
-    "dimension" : {
-      "xs" : 12,
-      "sm" : 12,
-      "md" : 10,
+      "md" : 12,
       "lg" : 10
     },
     "propertyValues" : {
       "cssClasses" : {
         "type" : "constant",
-        "value" : "title"
+        "value" : ""
       },
       "hidden" : {
         "type" : "constant",
