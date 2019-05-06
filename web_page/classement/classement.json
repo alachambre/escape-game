@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "classement",
   "name" : "classement",
-  "lastUpdate" : 1556281714229,
+  "lastUpdate" : 1557138078133,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -55,7 +55,7 @@
       },
       "headers" : {
         "type" : "constant",
-        "value" : [ "Equipe", "Temps" ]
+        "value" : [ "Equipe", "Horaire", "Temps" ]
       },
       "type" : {
         "type" : "constant",
@@ -73,7 +73,7 @@
       },
       "columnsKey" : {
         "type" : "constant",
-        "value" : [ "name", "score" ]
+        "value" : [ "name", "schedule|uiDate", "score" ]
       },
       "sortColumns" : {
         "type" : "constant"

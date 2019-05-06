@@ -1,24 +1,15 @@
 {
-  "designerVersion" : "1.9.31",
-  "id" : "newTeam",
-  "name" : "newTeam",
-  "lastUpdate" : 1555615853696,
+  "designerVersion" : "1.9.32",
+  "id" : "createTeam",
+  "name" : "createTeam",
+  "lastUpdate" : 1557141162548,
   "rows" : [ [ {
     "type" : "formContainer",
     "dimension" : {
       "xs" : 12
     },
-    "propertyValues" : {
-      "cssClasses" : {
-        "type" : "constant",
-        "value" : ""
-      },
-      "hidden" : {
-        "type" : "constant",
-        "value" : false
-      }
-    },
-    "reference" : "c97af8e0-affc-46e2-967a-70586f5d34df",
+    "propertyValues" : { },
+    "reference" : "958b4da8-15c1-44cf-b613-646d58d64788",
     "hasValidationError" : false,
     "id" : "pbFormContainer",
     "container" : {
@@ -27,7 +18,7 @@
         "xs" : 12
       },
       "propertyValues" : { },
-      "reference" : "014a59ce-1629-4c03-90a4-1a8fbf4fd5db",
+      "reference" : "1dba3f41-559e-44a4-bcf9-5a77173dcecc",
       "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
@@ -49,7 +40,7 @@
           },
           "level" : {
             "type" : "constant",
-            "value" : "Level 1"
+            "value" : "Level 4"
           },
           "cssClasses" : {
             "type" : "constant",
@@ -68,7 +59,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Bonitasoft Escape Game"
+            "value" : "New team"
           },
           "alignment" : {
             "type" : "constant",
@@ -83,91 +74,9 @@
             "value" : 12
           }
         },
-        "reference" : "aca43414-41de-48d1-b508-b1b3a876d7a4",
+        "reference" : "36d3ba3d-684a-494f-9b85-6ec2e6d23709",
         "hasValidationError" : false,
         "id" : "pbTitle"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "text" : {
-            "type" : "interpolation",
-            "value" : "Bienvenu dans l'escape game Bonitasoft!"
-          },
-          "level" : {
-            "type" : "constant",
-            "value" : "Level 4"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          }
-        },
-        "reference" : "1b47e2d6-50e3-4efc-a6e5-51e637238859",
-        "hasValidationError" : false,
-        "id" : "pbTitle"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Default label"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "allowHTML" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "text" : {
-            "type" : "interpolation",
-            "value" : "Choisissez un nom d'équipe et sauvez l'agilité!"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          }
-        },
-        "reference" : "115e7809-c44c-44d2-a184-2fcb6f3907ab",
-        "hasValidationError" : false,
-        "id" : "pbText"
       } ], [ {
         "type" : "container",
         "dimension" : {
@@ -215,7 +124,7 @@
             "value" : 12
           }
         },
-        "reference" : "48b59a2c-38ec-48eb-872e-b7c9d1724bef",
+        "reference" : "12e234c3-dc26-4d2d-b640-98b56a6b6bff",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [ [ {
@@ -249,7 +158,7 @@
             },
             "label" : {
               "type" : "interpolation",
-              "value" : "Nom d'équipe"
+              "value" : "Team name"
             },
             "type" : {
               "type" : "constant",
@@ -268,8 +177,7 @@
               "value" : "top"
             },
             "placeholder" : {
-              "type" : "constant",
-              "value" : "Choisissez un nom d'équipe"
+              "type" : "constant"
             },
             "alignment" : {
               "type" : "constant",
@@ -306,9 +214,117 @@
               "value" : 1
             }
           },
-          "reference" : "3fb93cee-ade6-4143-8c68-93bf28eac9ec",
+          "reference" : "25da03c8-0824-49f4-a52b-6e4ac57ef6e0",
           "hasValidationError" : false,
           "id" : "pbInput"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "md" : 12,
+            "sm" : 12,
+            "xs" : 12,
+            "lg" : 12
+          },
+          "propertyValues" : {
+            "showNow" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "inlineInput" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "dateFormat" : {
+              "type" : "constant",
+              "value" : "MM/dd/yyyy"
+            },
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "widgetId" : {
+              "type" : "constant",
+              "value" : "pbDateTimePicker"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 1
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Schedule"
+            },
+            "type" : {
+              "type" : "constant"
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "todayLabel" : {
+              "type" : "constant",
+              "value" : "Today"
+            },
+            "timePlaceholder" : {
+              "type" : "constant",
+              "value" : "Enter a time (h:mm:ss a)"
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "showToday" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "timeFormat" : {
+              "type" : "constant",
+              "value" : "h:mm:ss a"
+            },
+            "placeholder" : {
+              "type" : "constant",
+              "value" : "Enter a date (mm/dd/yyyy)"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "nowLabel" : {
+              "type" : "constant",
+              "value" : "Now"
+            },
+            "class" : {
+              "type" : "constant",
+              "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DateTimePickerWidget"
+            },
+            "dimension" : {
+              "type" : "constant",
+              "value" : 12
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formInput.teamInput.schedule"
+            },
+            "withTimeZone" : {
+              "type" : "constant",
+              "value" : false
+            }
+          },
+          "reference" : "9a910928-c8a2-4d25-9037-313efe4218b2",
+          "hasValidationError" : false,
+          "id" : "pbDateTimePicker"
         } ] ]
       } ], [ {
         "type" : "component",
@@ -344,7 +360,7 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : "Submit"
+            "value" : "Create"
           },
           "dataToSend" : {
             "type" : "expression",
@@ -391,6 +407,10 @@
             "type" : "constant",
             "value" : 12
           },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
+          },
           "url" : {
             "type" : "interpolation"
           },
@@ -411,7 +431,7 @@
             "value" : ""
           }
         },
-        "reference" : "839d14cd-b7f2-4460-9670-05835b37274f",
+        "reference" : "d51458d0-15ab-4e81-9931-cc81bb229e00",
         "hasValidationError" : false,
         "id" : "pbButton"
       } ], [ {
@@ -467,20 +487,20 @@
             "value" : 12
           }
         },
-        "reference" : "8eb132dc-ac92-47ff-b26c-decde85d2e5f",
+        "reference" : "e5cdd265-4135-43be-84a3-82872a9520ff",
         "hasValidationError" : false,
         "id" : "pbText"
       } ] ]
     }
   } ] ],
   "assets" : [ {
-    "id" : "d78e16e3-0be6-450b-a6e8-c93d7fbdfa04",
+    "id" : "19e93861-a975-4c71-b8cc-3ecf0ff181ab",
     "name" : "localization.json",
     "type" : "json",
     "order" : 0,
     "external" : false
   }, {
-    "id" : "5ba8f813-345c-4ee7-9d44-d52cf3e95a5d",
+    "id" : "6fc62a0e-6151-4a9c-9a12-7d9b017b5ca7",
     "name" : "style.css",
     "type" : "css",
     "order" : 0,
@@ -505,7 +525,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "8a6090cd-c886-4e6a-a569-0ff490643da8",
+  "uuid" : "144b85c9-c069-4fbe-9b8c-f0f7e0b25aa9",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

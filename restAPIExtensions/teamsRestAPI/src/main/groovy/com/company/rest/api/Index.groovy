@@ -20,14 +20,15 @@ import com.company.model.TeamDAO
 class Index implements RestApiController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Index.class)
+	private static final TeamMapper TEAM_MAPPER = new TeamMapper()
 
     @Override
     RestApiResponse doHandle(HttpServletRequest request, RestApiResponseBuilder responseBuilder, RestAPIContext context) {
 		def teams = context.getApiClient().getDAO(TeamDAO.class).findRanked(0, 100).findAll { it.score }
 
-        // Send the result as a JSON representation
-        // You may use buildPagedResponse if your result is multiple
-        return buildResponse(responseBuilder, HttpServletResponse.SC_OK, new JsonBuilder(teams).toString())
+        def result = TEAM_MAPPER.writeValueAsString(teams)
+		
+        return buildResponse(responseBuilder, HttpServletResponse.SC_OK, result)
     }
 
     /**

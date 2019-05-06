@@ -15,12 +15,12 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_Kol5YGICEemZooB5Fg4LYA" name="team" dataType="_3woVE2IBEemZooB5Fg4LYA" className="com.company.model.Team">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_Orj_kGICEemZooB5Fg4LYA" name="initTeam()" content="def teamVar = new com.company.model.Team()&#xA;teamVar.name = teamInput?.name&#xA;return teamVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Team">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_Orj_kWICEemZooB5Fg4LYA" name="teamInput" type="COMPLEX"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_XboxU2_oEemwzOGFoINZBA" name="initTeam()" content="def teamVar = new com.company.model.Team()&#xA;teamVar.name = teamInput?.name&#xA;teamVar.schedule = teamInput?.schedule&#xA;return teamVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Team">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_XbpYYG_oEemwzOGFoINZBA" name="teamInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_3woU82IBEemZooB5Fg4LYA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_PsYjYGICEemZooB5Fg4LYA" name="newTeam" content="8a6090cd-c886-4e6a-a569-0ff490643da8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_bVohsG_oEemwzOGFoINZBA" name="createTeam" content="144b85c9-c069-4fbe-9b8c-f0f7e0b25aa9" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_3woU9WIBEemZooB5Fg4LYA">
         <targetForm xmi:type="expression:Expression" xmi:id="_3woU9mIBEemZooB5Fg4LYA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -31,8 +31,9 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_3woU-mIBEemZooB5Fg4LYA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_3woU-2IBEemZooB5Fg4LYA">
-        <inputs xmi:type="process:ContractInput" xmi:id="_Org8QGICEemZooB5Fg4LYA" name="teamInput" type="COMPLEX" dataReference="team">
-          <inputs xmi:type="process:ContractInput" xmi:id="_Org8QWICEemZooB5Fg4LYA" name="name"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_XboxUG_oEemwzOGFoINZBA" name="teamInput" type="COMPLEX" dataReference="team">
+          <inputs xmi:type="process:ContractInput" xmi:id="_XboxUW_oEemwzOGFoINZBA" name="name"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_XboxUm_oEemwzOGFoINZBA" name="schedule" type="LOCALDATETIME"/>
         </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_3woU_GIBEemZooB5Fg4LYA">
