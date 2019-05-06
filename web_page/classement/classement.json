@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "classement",
   "name" : "classement",
-  "lastUpdate" : 1557138078133,
+  "lastUpdate" : 1557142977999,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -112,7 +112,7 @@
       },
       "text" : {
         "type" : "interpolation",
-        "value" : "Démarrer une partie!"
+        "value" : "Nouvelle inscription"
       },
       "type" : {
         "type" : "constant",
