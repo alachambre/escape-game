@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "setScore",
   "name" : "setScore",
-  "lastUpdate" : 1555616468251,
+  "lastUpdate" : 1557229525270,
   "rows" : [ [ {
     "type" : "formContainer",
     "dimension" : {
@@ -312,11 +312,15 @@
           },
           "closeOnSuccess" : {
             "type" : "constant",
-            "value" : false
+            "value" : true
           },
           "modalId" : {
             "type" : "constant",
             "value" : ""
+          },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
           }
         },
         "reference" : "12eba2cb-f14a-44de-816c-f69c13dbc95c",

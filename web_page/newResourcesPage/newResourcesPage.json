@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "newResourcesPage",
   "name" : "newResourcesPage",
-  "lastUpdate" : 1557218831745,
+  "lastUpdate" : 1557228071155,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -443,8 +443,8 @@
               "value" : "app-item"
             },
             "hidden" : {
-              "type" : "constant",
-              "value" : false
+              "type" : "expression",
+              "value" : "$item.score"
             },
             "repeatedCollection" : {
               "type" : "variable",
