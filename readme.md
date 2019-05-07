@@ -8,6 +8,7 @@ This project is intended to be used to manage the escape game stand during Bonit
 * A business data model, which represent a Team
 * Two processes, one to create a Team and schedule the game, and one to enter a score after a game.
 * A living application, to display results, register new teams and enter scores
+* An other living application, used during the escape game
 * A REST API Extension used by the application page, which return the teams with a score (i.e paries already played)
 * A Theme for the application
 
