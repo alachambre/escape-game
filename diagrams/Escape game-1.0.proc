@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_3wnt0GIBEemZooB5Fg4LYA" name="Escape game" author="adrien" bonitaVersion="7.9.0" bonitaModelVersion="7.9.0-002" configId="ACED000574001B4573636170652067616D65372E392E302D303032372E392E307370">
     <elements xmi:type="process:Pool" xmi:id="_3woU4GIBEemZooB5Fg4LYA" name="NewTeam">
       <elements xmi:type="process:Lane" xmi:id="_3woU4WIBEemZooB5Fg4LYA" name="Employee lane" actor="_3woU-mIBEemZooB5Fg4LYA">
@@ -30,6 +30,26 @@
         <condition xmi:type="expression:Expression" xmi:id="_ctPYUmIHEemZooB5Fg4LYA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_3woU-mIBEemZooB5Fg4LYA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_bSyC8HChEemC59hhshTdPA" name="EscapeGameEnv" version="7.9.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_bSyC-XChEemC59hhshTdPA">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_bSyC-nChEemC59hhshTdPA" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_bSyC-3ChEemC59hhshTdPA"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_bSyC_HChEemC59hhshTdPA"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_bSyC_XChEemC59hhshTdPA">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_bSyC_nChEemC59hhshTdPA"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC8XChEemC59hhshTdPA" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC8nChEemC59hhshTdPA" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC83ChEemC59hhshTdPA" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC9HChEemC59hhshTdPA" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC9XChEemC59hhshTdPA" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC9nChEemC59hhshTdPA" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC93ChEemC59hhshTdPA" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bSyC-HChEemC59hhshTdPA" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_3woU-2IBEemZooB5Fg4LYA">
         <inputs xmi:type="process:ContractInput" xmi:id="_XboxUG_oEemwzOGFoINZBA" name="teamInput" type="COMPLEX" dataReference="team">
           <inputs xmi:type="process:ContractInput" xmi:id="_XboxUW_oEemwzOGFoINZBA" name="name"/>
@@ -123,6 +143,26 @@
         <condition xmi:type="expression:Expression" xmi:id="_mmjqAmILEemZooB5Fg4LYA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_1qpREGIHEemZooB5Fg4LYA" name="Actor1" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_c059AHChEemC59hhshTdPA" name="EscapeGameEnv" version="7.9.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_c059CXChEemC59hhshTdPA">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_c059CnChEemC59hhshTdPA" name="Actor1">
+            <groups xmi:type="actormapping:Groups" xmi:id="_c059C3ChEemC59hhshTdPA"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_c059DHChEemC59hhshTdPA"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_c059DXChEemC59hhshTdPA">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_c059DnChEemC59hhshTdPA"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059AXChEemC59hhshTdPA" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059AnChEemC59hhshTdPA" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059A3ChEemC59hhshTdPA" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059BHChEemC59hhshTdPA" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059BXChEemC59hhshTdPA" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059BnChEemC59hhshTdPA" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059B3ChEemC59hhshTdPA" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c059CHChEemC59hhshTdPA" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_ud-PE2IHEemZooB5Fg4LYA">
         <inputs xmi:type="process:ContractInput" xmi:id="_JzgK0GIKEemZooB5Fg4LYA" name="id" type="LONG">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_JzgK0WIKEemZooB5Fg4LYA"/>

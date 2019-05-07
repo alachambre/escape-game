@@ -1,0 +1,469 @@
+{
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.7.25",
+  "id" : "layout90s",
+  "name" : "layout90s",
+  "lastUpdate" : 1557217033595,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "layout-header"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "76b18207-0db1-475f-92fc-b9a8ca362afd",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "27070ecb-9770-44fc-a60d-6b4b87f122af",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<br/>\n<br/>\n<br/>\n<br/>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : ""
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          }
+        },
+        "reference" : "5b167c97-5760-4b4d-9f25-e7afbf4529f8",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      } ] ]
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "targetUrl" : {
+          "type" : "variable",
+          "value" : "targetedPageUrl"
+        }
+      },
+      "reference" : "99d68f56-51ab-4b18-88ee-b359e62e5e05",
+      "hasValidationError" : false,
+      "id" : "customLivingApplicationMenuV4"
+    } ] ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "layout-content"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "895c6d39-5b4d-455e-94e6-1e97a1d0c0b9",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "src" : {
+          "type" : "variable",
+          "value" : "targetedPageUrl"
+        }
+      },
+      "reference" : "3f1bf628-4db3-4c00-818e-bf64831ea568",
+      "hasValidationError" : false,
+      "id" : "customLivingApplicationIFrameV4"
+    } ] ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "layout-footer"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "19625e61-acb3-4983-b172-9fa64d2abbd6",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Powered by"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : ""
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        }
+      },
+      "reference" : "a2c7d67f-e623-4565-9de5-cb1e8c40e964",
+      "hasValidationError" : false,
+      "id" : "pbText"
+    } ], [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 4,
+        "lg" : 4
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "c5864216-0c27-489b-95e7-d635535efb54",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ ] ]
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 4,
+        "lg" : 4
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "srcType" : {
+          "type" : "constant",
+          "value" : "Asset"
+        },
+        "url" : {
+          "type" : "constant"
+        },
+        "assetName" : {
+          "type" : "constant",
+          "value" : "logo.png"
+        },
+        "alt" : {
+          "type" : "interpolation"
+        }
+      },
+      "reference" : "66433f31-5c46-49cc-94b0-df76cf1d777a",
+      "hasValidationError" : false,
+      "id" : "pbImage"
+    }, {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 4,
+        "lg" : 4
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "38613417-7af1-4fbc-a43f-b845a03e1c88",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ ] ]
+    } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "URL"
+      },
+      "url" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "document" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "showPreview" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "685b7ff3-d113-4ea1-b6f2-7a9c3ab025a4",
+    "hasValidationError" : false,
+    "id" : "pbFileViewer"
+  } ] ],
+  "assets" : [ {
+    "id" : "9300e21b-5209-4e62-b1c5-f208af822434",
+    "name" : "Fixedsys500c.otf",
+    "type" : "css",
+    "order" : 11,
+    "external" : false
+  }, {
+    "id" : "5183f0fd-6bf3-467c-a2c0-2c13dc332e9c",
+    "name" : "animation386.js",
+    "type" : "js",
+    "order" : 9,
+    "external" : false
+  }, {
+    "id" : "4d4aa1e1-b69b-4600-8300-3732ee5eb9e1",
+    "name" : "Fixedsys500c.svg",
+    "type" : "css",
+    "order" : 12,
+    "external" : false
+  }, {
+    "id" : "e9512b72-26da-4646-ae30-a32f4a362f0f",
+    "name" : "bootstrap.css",
+    "type" : "css",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "ae6f3487-98cd-4920-9e5a-ff61c324e5a4",
+    "name" : "bootstrap-theme.css",
+    "type" : "css",
+    "order" : 3,
+    "external" : false
+  }, {
+    "id" : "da2ff6d7-72e0-4ec1-9c5a-7372b83cdc7a",
+    "name" : "Fixedsys500c.ttf",
+    "type" : "css",
+    "order" : 13,
+    "external" : false
+  }, {
+    "id" : "2007621b-afa8-48ec-846f-f4d78ce90b8a",
+    "name" : "layout.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "96e7d863-f4f5-4839-9026-1d9bdd8e4853",
+    "name" : "Fixedsys500c.eot",
+    "type" : "css",
+    "order" : 10,
+    "external" : false
+  }, {
+    "id" : "616b59a4-9c06-4c86-924d-0d076ee131c4",
+    "name" : "bootstrap.js",
+    "type" : "js",
+    "order" : 15,
+    "external" : false
+  }, {
+    "id" : "2a2ac6a1-2895-4a40-a639-f97d21a11de1",
+    "name" : "logo.png",
+    "type" : "img",
+    "order" : 16,
+    "external" : false
+  }, {
+    "id" : "27b2007f-d336-4f20-b640-5810f7a8af54",
+    "name" : "layout.js",
+    "type" : "js",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "32cfafe9-d36d-4e1a-95b0-f4281c96de6e",
+    "name" : "Fixedsys500c.woff",
+    "type" : "css",
+    "order" : 14,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "targetedPageUrl" : {
+      "type" : "constant",
+      "value" : "",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "68d53ded-1d70-41ff-9815-b8cdfaee8963",
+  "type" : "layout",
+  "description" : "Page generated with Bonita UI designer"
+}

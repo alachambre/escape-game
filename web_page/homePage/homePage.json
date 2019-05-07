@@ -1,0 +1,510 @@
+{
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.7.72",
+  "id" : "homePage",
+  "name" : "homePage",
+  "lastUpdate" : 1557217033187,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "panel panel-default"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Carnet de bord :"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 1"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "ea324866-23af-4a25-9006-46752d9d573b",
+    "hasValidationError" : false,
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "cadre"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "88214f21-e1d2-4eec-b99a-6436c4b668e5",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "L'entreprise d’aujourd’hui doit être"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "db9fac80-c498-45cf-8ba2-2e83448f1345",
+      "hasValidationError" : false,
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "plus adaptable et plus flexible"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "0568e0d0-e7b8-4f88-a3fe-2cdbee41b7dc",
+      "hasValidationError" : false,
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "et évoluer beaucoup plus vite qu’hier"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "43a03ff8-6e3c-46e7-9632-fa0a6ff7db8e",
+      "hasValidationError" : false,
+      "id" : "pbTitle"
+    } ] ]
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "La montée de la complexité et, de façon liée, une perte de sens ;\nLa montée de l’individualité, qui plaide pour une reconnaissance de la capacité de l’individu à penser et à agir, donc à avoir son libre arbitre et ses exigences, qu’il soit placé dans une posture de consommateur sur un marché ou de producteur dans une organisation ;\nLa montée de l’incertitude, qui impose naturellement la nécessité d’anticiper pour améliorer encore nos capacités de réaction. En effet, nous postulons qu’anticiper les scénarios du futur permet de s’y préparer et de réagir plus vite le moment venu ;<br/>\nLa montée de l’interdépendance, qui sous-tend le principe de partage du pouvoir tant à l’intérieur d’une organisation qu’entre les acteurs de l’économie d’un secteur par exemple. Cette interdépendance s’interprète aussi sous l’angle de la coopération croissante entre acteurs publics et privés.<br/>\nCes quatre tendances placent les organisations face à un nouveau paradigme managérial à l’opposé de tout ce qu’on a appris depuis l’émergence de la société de consommation.<br/><br/>"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : ""
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      }
+    },
+    "reference" : "65a74dff-cb4d-4132-96b6-22f70d6d77b5",
+    "hasValidationError" : false,
+    "id" : "pbText"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "9462c820-807f-4803-83af-cf092ffdf52f",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : "cadre"
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "b427b233-05d7-44be-8684-10db75ab718d",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Problème du bloc unique,"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "43f07b58-8059-451a-9f3a-24cc6369408e",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "hiérarchique et centralisé."
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "3e01f6fd-540b-4bd5-b893-d2dd6af47214",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ] ]
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Si l’entreprise des années 60 peut être considérée comme un bloc unique, hiérarchique et centralisé, l’entreprise d'aujourd’hui ressemblerait plutôt à un ensemble de petites unités appartenant ou non juridiquement à la même société : ces différentes unités partagent des choses, des valeurs, des processus, ce qui permet à chacune d’évoluer dans la même direction.<br/><br/>\n\nElles sont très interconnectées entre elles et très rapidement. Cela signifie que si l’une capte un changement de l’environnement, le signal est directement renvoyé aux autres unités. Toutes peuvent changer de direction de manière quasi instantanée.<br/><br/>\n\nL'entreprise dispose pour ce faire des outils informatiques, pour la gestion interne et pour les relations avec les clients et les autres acteurs de l’environnement. Cela permet essentiellement la rapidité d’action qui constitue l’enjeu d'aujourd’hui.<br/><br/>\n \nDans la sphère publique, on assiste au même mouvement de décentralisation des centres de pouvoirs et d’action. La démocratie locale et participative se met progressivement en place, en mobilisant de nouveaux référentiels."
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : ""
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        }
+      },
+      "reference" : "dfb7417a-01d7-4b9a-9912-e188a858dec9",
+      "hasValidationError" : false,
+      "id" : "pbText"
+    } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "URL"
+      },
+      "url" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "document" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "showPreview" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "a7e6c204-e1f4-4846-8206-e0ed648f44aa",
+    "hasValidationError" : false,
+    "id" : "pbFileViewer"
+  } ] ],
+  "assets" : [ {
+    "id" : "2a894bae-0fe6-4eec-894f-e58e59b2da14",
+    "name" : "bootstrap-theme.css",
+    "type" : "css",
+    "order" : 7,
+    "external" : false
+  }, {
+    "id" : "bd3a073c-dc21-4f21-a4ac-f0a38b7f14da",
+    "name" : "Fixedsys500c.eot",
+    "type" : "css",
+    "order" : 10,
+    "external" : false
+  }, {
+    "id" : "c47f164c-2b4b-4014-8982-8fb91c3de0a6",
+    "name" : "animation386.js",
+    "type" : "js",
+    "order" : 9,
+    "external" : false
+  }, {
+    "id" : "e1a1cacc-e6e4-484c-be3f-03b52b16e08f",
+    "name" : "Fixedsys500c.woff",
+    "type" : "css",
+    "order" : 13,
+    "external" : false
+  }, {
+    "id" : "599d83d9-ada4-4580-bf63-d360d5abfdf7",
+    "name" : "code3.png",
+    "type" : "img",
+    "order" : 16,
+    "external" : false
+  }, {
+    "id" : "ac7b428e-e488-422c-a0d6-1dadbe85659e",
+    "name" : "bootstrap.css",
+    "type" : "css",
+    "order" : 6,
+    "external" : false
+  }, {
+    "id" : "7206105d-9b8e-4312-aeed-92c7833e4d39",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "0c20736b-ab6f-4b79-b22a-fa6490950962",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "46cd1570-570a-4812-9593-143202f52eda",
+    "name" : "code4.png",
+    "type" : "img",
+    "order" : 17,
+    "external" : false
+  }, {
+    "id" : "eee9e3b9-19e0-4040-a61a-70ee01dbc5d1",
+    "name" : "Fixedsys500c.otf",
+    "type" : "css",
+    "order" : 11,
+    "external" : false
+  }, {
+    "id" : "fe37fc5d-8010-4e8b-ae40-2f84caf97792",
+    "name" : "Fixedsys500c.ttf",
+    "type" : "css",
+    "order" : 12,
+    "external" : false
+  }, {
+    "id" : "bbd63398-33d1-4eef-9aba-59287dfa7381",
+    "name" : "bootstrap.js",
+    "type" : "js",
+    "order" : 8,
+    "external" : false
+  }, {
+    "id" : "02027288-8b16-4cdf-a2d6-b8ba287daf38",
+    "name" : "code1.png",
+    "type" : "img",
+    "order" : 14,
+    "external" : false
+  }, {
+    "id" : "2472a4d3-79ef-4773-9563-efeeda60c408",
+    "name" : "code2.png",
+    "type" : "img",
+    "order" : 15,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : { },
+  "hasValidationError" : false,
+  "uuid" : "dfcdfa88-6dc6-4bac-9f2a-afd3c4e31fc9",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}
