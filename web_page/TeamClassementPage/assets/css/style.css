@@ -129,9 +129,9 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 }
 
 .app-item {
-    border: 2px solid lightgray;
+    /*border: 2px solid lightgray;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 4px;*/
 }
 
 .itemContainer > * {
@@ -325,3 +325,11 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     }
 }
 
+.myPadding{
+    padding-bottom: 20px;
+}
+
+.tabPolice{
+    font-size: 40px;
+    line-height: 40px;
+}
