@@ -1,0 +1,138 @@
+/*
+    The layout made of three containers:
+        - layout-header
+            Comes with the living application menu.                
+        - layout-content
+            Comes with the living application iframe to display pages or forms.
+        - layout-footer
+            Empty by default
+    
+    You can add more widgets in those containers by using the UI Designer.
+     
+    This CSS file manages the layout behaviour,   
+    It allows to display the content container in full height, 
+    and header and footer with fixed size.
+
+*/
+body { visibility: hidden }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+body > div.container-fluid {
+  display: table;
+
+  width: 100%;
+  height: 100%;
+  
+  margin: 0;
+  padding: 0;
+}
+
+body > div.container-fluid > div.row {
+  display: table-row;
+}
+
+body > div.container-fluid > div.row:nth-child(2),
+body > div.container-fluid > div.row:nth-child(2) div, 
+body > div.container-fluid > div.row:nth-child(2) iframe {
+  height: 100%;
+}
+
+body > div.container-fluid > div.row:nth-child(2){
+    /* Required for IE9 - IE10 */
+    display: table-cell;
+}
+
+.component {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.layout-footer{
+    border-top-style: dashed;
+    border-color: yellow;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.colorTitle {
+  
+  font-size:60px;
+  width:100%;
+
+  margin: 0 auto;
+  text-align: center;
+
+  color:#313131;
+  font-weight: bold;
+  position: absolute;
+  -webkit-animation:colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+
+    color: chartreuse;
+  }
+
+  10% {
+
+    color: turquoise;
+  }
+
+  20% {
+
+    color: mediumslateblue;
+  }
+
+  30% {
+
+    color: fuchsia;
+  }
+
+  40% {
+
+    color: deeppink;
+  }
+
+  50% {
+
+    color: sandybrown;
+  }
+
+  60% {
+
+    color: crimson;
+  }
+
+  70% {
+
+    color: gold;
+  }
+  80% {
+
+    color: seagreen;
+  }
+
+  90% {
+
+    color: lightseagreen;
+  }
+
+  100% {
+
+    color: pink;
+  }
+}

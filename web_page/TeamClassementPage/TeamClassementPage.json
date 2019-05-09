@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "TeamClassementPage",
   "name" : "TeamClassementPage",
-  "lastUpdate" : 1557388333766,
+  "lastUpdate" : 1557413463814,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -224,9 +224,58 @@
                 } ], [ {
                   "type" : "component",
                   "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 3,
+                    "lg" : 3
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "label" : {
+                      "type" : "interpolation",
+                      "value" : "Default label"
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 4
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "text" : {
+                      "type" : "interpolation",
+                      "value" : "{{rank($item)}}"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "left"
+                    }
+                  },
+                  "reference" : "99cf9f23-d91c-471c-a1bf-20dc339fd206",
+                  "hasValidationError" : false,
+                  "id" : "pbText"
+                }, {
+                  "type" : "component",
+                  "dimension" : {
                     "xs" : 3,
                     "sm" : 4,
-                    "md" : 4,
+                    "md" : 3,
                     "lg" : 3
                   },
                   "propertyValues" : {
@@ -275,8 +324,8 @@
                   "dimension" : {
                     "xs" : 5,
                     "sm" : 4,
-                    "md" : 5,
-                    "lg" : 6
+                    "md" : 3,
+                    "lg" : 3
                   },
                   "propertyValues" : {
                     "cssClasses" : {
@@ -309,7 +358,7 @@
                     },
                     "text" : {
                       "type" : "interpolation",
-                      "value" : "<p class=\"h2\">{{moment($item.schedule)}}\n</p>\n<br/>\nat {{$item.schedule|uiDate:'hh:mm'}}"
+                      "value" : "<p class=\"h2\">{{moment($item.schedule)}}\n</p>\n<br/>\nat {{$item.schedule|uiDate:'HH:mm'}}"
                     },
                     "alignment" : {
                       "type" : "constant",
@@ -371,6 +420,93 @@
                 } ] ]
               } ] ]
             } ] ]
+          } ], [ {
+            "type" : "component",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 12,
+              "lg" : 12
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : ""
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "disabled" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "label" : {
+                "type" : "interpolation",
+                "value" : "Chercher un résultat"
+              },
+              "alignment" : {
+                "type" : "constant",
+                "value" : "right"
+              },
+              "buttonStyle" : {
+                "type" : "constant",
+                "value" : "info"
+              },
+              "action" : {
+                "type" : "constant",
+                "value" : "Open modal"
+              },
+              "assign" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "url" : {
+                "type" : "interpolation"
+              },
+              "responseStatusCode" : {
+                "type" : "variable",
+                "value" : ""
+              },
+              "dataToSend" : {
+                "type" : "constant"
+              },
+              "dataFromSuccess" : {
+                "type" : "variable",
+                "value" : ""
+              },
+              "closeOnSuccess" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "dataFromError" : {
+                "type" : "variable",
+                "value" : ""
+              },
+              "targetUrlOnSuccess" : {
+                "type" : "interpolation"
+              },
+              "collectionToModify" : {
+                "type" : "variable"
+              },
+              "modalId" : {
+                "type" : "constant",
+                "value" : "searchTeam"
+              },
+              "collectionPosition" : {
+                "type" : "constant",
+                "value" : "Last"
+              },
+              "valueToAdd" : {
+                "type" : "constant"
+              },
+              "removeItem" : {
+                "type" : "variable"
+              }
+            },
+            "reference" : "017026ad-565a-4460-a630-bae6ddc70eff",
+            "hasValidationError" : false,
+            "id" : "pbButton"
           } ] ]
         },
         "title" : "Classement des équipes",
@@ -764,8 +900,8 @@
                 "value" : false
               },
               "disabled" : {
-                "type" : "constant",
-                "value" : false
+                "type" : "expression",
+                "value" : "teamsWithoutScore.length == 0"
               },
               "label" : {
                 "type" : "interpolation",
@@ -953,7 +1089,7 @@
         "value" : true
       }
     },
-    "reference" : "c746126c-06a1-41cb-a98b-caef211bed48",
+    "reference" : "7078d7f2-0d20-4932-9858-4580846455ef",
     "hasValidationError" : false,
     "id" : "pbModalContainer",
     "container" : {
@@ -962,7 +1098,7 @@
         "xs" : 12
       },
       "propertyValues" : { },
-      "reference" : "769dc308-834b-4f0d-9f22-cd0caf608f19",
+      "reference" : "29c70112-fa6d-468d-a2e8-86ef9f1ecc53",
       "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
@@ -983,9 +1119,71 @@
             "value" : false
           }
         },
-        "reference" : "4b34d4ae-c6a6-46e4-ac13-dba0c14b9464",
+        "reference" : "a9988805-32f1-43f7-8e25-1c573671851f",
         "hasValidationError" : false,
         "id" : "setScoreFragment",
+        "binding" : { }
+      } ] ]
+    }
+  } ], [ {
+    "type" : "modalContainer",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "modalId" : {
+        "type" : "constant",
+        "value" : "searchTeam"
+      },
+      "size" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "animation" : {
+        "type" : "constant",
+        "value" : true
+      }
+    },
+    "reference" : "2a6fa366-d1cb-4364-909d-a47b649e42d6",
+    "hasValidationError" : false,
+    "id" : "pbModalContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "1386df5e-852b-47c4-9840-ae4eea55e505",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "953a158b-6381-4297-829b-f69699ac9db1",
+        "hasValidationError" : false,
+        "id" : "searchTeamFragment",
         "binding" : { }
       } ] ]
     }
@@ -1003,6 +1201,12 @@
     "order" : 16,
     "external" : false
   }, {
+    "id" : "9dcd4bff-8285-4140-aba3-082a3e80f749",
+    "name" : "bootstrap.css",
+    "type" : "css",
+    "order" : 17,
+    "external" : false
+  }, {
     "id" : "5d879ed7-1225-4371-95c0-d6dcd339334a",
     "name" : "Fixedsys500c.otf",
     "type" : "css",
@@ -1013,12 +1217,6 @@
     "name" : "Fixedsys500c.woff",
     "type" : "css",
     "order" : 11,
-    "external" : false
-  }, {
-    "id" : "05066fc4-3661-4a0a-a5d0-30586fc63ca8",
-    "name" : "bootstrap.css",
-    "type" : "css",
-    "order" : 17,
     "external" : false
   }, {
     "id" : "8ac381b1-35de-4abf-b93b-75358922dbf9",
@@ -1055,12 +1253,12 @@
   "data" : {
     "moment" : {
       "type" : "expression",
-      "value" : "//var getDate = $data.resourcesAPI.lastUpdateDate;\n\nreturn function(time){\n    var getTime = time;\n    return moment(getTime).fromNow();\n}\n\n\n",
+      "value" : "return function(time){\n    var getTime = time;\n    return moment(getTime).fromNow();\n}\n\n\n",
       "exposed" : false
     },
     "teams" : {
       "type" : "url",
-      "value" : "../API/bdm/businessData/com.company.model.Team?q=findRanked&p=0&c=100",
+      "value" : "../API/extension/retrieveFirstTeams?max=3",
       "exposed" : false
     },
     "myTab" : {
@@ -1071,6 +1269,11 @@
     "teamsWithoutScore" : {
       "type" : "url",
       "value" : "../API/extension/retrieveTeamsWithoutScore",
+      "exposed" : false
+    },
+    "rank" : {
+      "type" : "expression",
+      "value" : "return function(team){\n    var rank = $data.teams.indexOf(team)\n    if (rank === 0) {\n        return \"<p class=\\\"first\\\">Premier:</p>\";\n    }\n    if (rank === 1) {\n        return \"<p class=\\\"second\\\">Deuxieme:</p>\";\n    }\n    if (rank === 2) {\n        return \"<p class=\\\"third\\\">Troisieme:</p>\";\n    }\n    return \"\";\n}",
       "exposed" : false
     }
   },

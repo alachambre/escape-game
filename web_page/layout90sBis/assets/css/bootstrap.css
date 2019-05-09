@@ -3295,6 +3295,12 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+.fade {
+  opacity: 0;
+}
+.fade.in {
+  opacity: 1;
+}
 .collapse {
   display: none;
   visibility: hidden;

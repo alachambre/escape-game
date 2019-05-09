@@ -333,3 +333,18 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     font-size: 40px;
     line-height: 40px;
 }
+
+.first {
+    font-size: 30px;
+    color: gold;
+}
+
+.second {
+    font-size: 30px;
+    color: silver;
+}
+
+.third {
+    font-size: 30px;
+    color: #CD7F32;
+}
