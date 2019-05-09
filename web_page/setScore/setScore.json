@@ -2,11 +2,14 @@
   "designerVersion" : "1.9.31",
   "id" : "setScore",
   "name" : "setScore",
-  "lastUpdate" : 1555616468251,
+  "lastUpdate" : 1557385868607,
   "rows" : [ [ {
-    "type" : "formContainer",
+    "type" : "fragment",
     "dimension" : {
-      "xs" : 12
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
     },
     "propertyValues" : {
       "cssClasses" : {
@@ -18,368 +21,10 @@
         "value" : false
       }
     },
-    "reference" : "678526c8-e85b-4fa5-987d-a430a4ad3a15",
+    "reference" : "ec9b77a1-2b75-4206-a86a-1baaf1751867",
     "hasValidationError" : false,
-    "id" : "pbFormContainer",
-    "container" : {
-      "type" : "container",
-      "dimension" : {
-        "xs" : 12
-      },
-      "propertyValues" : { },
-      "reference" : "61e4a8a9-a276-4aff-a8e8-e18381a6d6e4",
-      "hasValidationError" : false,
-      "id" : "pbContainer",
-      "rows" : [ [ {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "text" : {
-            "type" : "interpolation",
-            "value" : "Félicitation!"
-          },
-          "level" : {
-            "type" : "constant",
-            "value" : "Level 2"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "center"
-          }
-        },
-        "reference" : "ff01f950-3d7a-4aff-ba24-3a92e1d0b538",
-        "hasValidationError" : false,
-        "id" : "pbTitle"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "disabled" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Serlectionner l'équipe gagnante"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "placeholder" : {
-            "type" : "interpolation",
-            "value" : "Nom d'équipe"
-          },
-          "availableValues" : {
-            "type" : "expression",
-            "value" : "teams"
-          },
-          "displayedKey" : {
-            "type" : "constant",
-            "value" : "name"
-          },
-          "returnedKey" : {
-            "type" : "constant",
-            "value" : "persistenceId"
-          },
-          "value" : {
-            "type" : "variable",
-            "value" : "formInput.id"
-          }
-        },
-        "reference" : "69de4106-a3d1-4214-a66e-d085cf0e5bf9",
-        "hasValidationError" : false,
-        "id" : "pbSelect"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "md" : 12,
-          "sm" : 12,
-          "xs" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "hidden" : {
-            "type" : "expression",
-            "value" : "!formInput.id"
-          },
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "widgetId" : {
-            "type" : "constant",
-            "value" : "pbInput"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 1
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Temps"
-          },
-          "type" : {
-            "type" : "constant",
-            "value" : "number"
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "placeholder" : {
-            "type" : "constant"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          },
-          "class" : {
-            "type" : "constant",
-            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
-          },
-          "dimension" : {
-            "type" : "constant",
-            "value" : 12
-          },
-          "value" : {
-            "type" : "variable",
-            "value" : "formInput.score"
-          },
-          "minLength" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "maxLength" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "min" : {
-            "type" : "constant"
-          },
-          "max" : {
-            "type" : "constant"
-          },
-          "step" : {
-            "type" : "constant",
-            "value" : 1
-          }
-        },
-        "reference" : "5bc1cd23-fbcc-432e-940f-658dae7e4cc2",
-        "hasValidationError" : false,
-        "id" : "pbInput"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "md" : 12,
-          "sm" : 12,
-          "xs" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "removeItem" : {
-            "type" : "variable"
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "widgetId" : {
-            "type" : "constant",
-            "value" : "pbButton"
-          },
-          "buttonStyle" : {
-            "type" : "constant",
-            "value" : "primary"
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Classement"
-          },
-          "dataToSend" : {
-            "type" : "expression",
-            "value" : "formOutput"
-          },
-          "dataFromError" : {
-            "type" : "variable",
-            "value" : "formOutput._submitError"
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "collectionPosition" : {
-            "type" : "constant"
-          },
-          "targetUrlOnSuccess" : {
-            "type" : "interpolation",
-            "value" : "/bonita/apps/escpaeGameApps/classement"
-          },
-          "action" : {
-            "type" : "constant",
-            "value" : "Start process"
-          },
-          "collectionToModify" : {
-            "type" : "variable"
-          },
-          "valueToAdd" : {
-            "type" : "expression"
-          },
-          "disabled" : {
-            "type" : "expression",
-            "value" : "$form.$invalid"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "center"
-          },
-          "class" : {
-            "type" : "constant",
-            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
-          },
-          "dimension" : {
-            "type" : "constant",
-            "value" : 12
-          },
-          "url" : {
-            "type" : "interpolation"
-          },
-          "responseStatusCode" : {
-            "type" : "variable",
-            "value" : ""
-          },
-          "dataFromSuccess" : {
-            "type" : "variable",
-            "value" : ""
-          },
-          "closeOnSuccess" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "modalId" : {
-            "type" : "constant",
-            "value" : ""
-          }
-        },
-        "reference" : "12eba2cb-f14a-44de-816c-f69c13dbc95c",
-        "hasValidationError" : false,
-        "id" : "pbButton"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "md" : 12,
-          "sm" : 12,
-          "xs" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "allowHTML" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "hidden" : {
-            "type" : "expression",
-            "value" : "!formOutput._submitError.message"
-          },
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
-          },
-          "widgetId" : {
-            "type" : "constant",
-            "value" : "pbText"
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation"
-          },
-          "text" : {
-            "type" : "interpolation",
-            "value" : "<strong>{{formOutput._submitError.message}}</strong>\n{{submit_errors_list}}"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          },
-          "class" : {
-            "type" : "constant",
-            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-          },
-          "dimension" : {
-            "type" : "constant",
-            "value" : 12
-          }
-        },
-        "reference" : "849e348e-8580-42ab-954e-654e7a3658dc",
-        "hasValidationError" : false,
-        "id" : "pbText"
-      } ] ]
-    }
+    "id" : "setScoreFragment",
+    "binding" : { }
   } ] ],
   "assets" : [ {
     "id" : "d48dd5a5-dcab-4815-ad69-7477cb11ef00",
@@ -388,10 +33,52 @@
     "order" : 0,
     "external" : false
   }, {
+    "id" : "685e5d36-24ee-49be-9fd4-8fd1cb0e7198",
+    "name" : "Fixedsys500c.svg",
+    "type" : "css",
+    "order" : 5,
+    "external" : false
+  }, {
+    "id" : "04c683a5-6e30-4ab6-92f0-c2e26b400053",
+    "name" : "Fixedsys500c.eot",
+    "type" : "css",
+    "order" : 3,
+    "external" : false
+  }, {
+    "id" : "ff686592-95e0-43b0-b7b1-a96bb326210b",
+    "name" : "Fixedsys500c.otf",
+    "type" : "css",
+    "order" : 4,
+    "external" : false
+  }, {
+    "id" : "9798eba6-bf2c-49de-b3e1-88199ced1284",
+    "name" : "bootstrap.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "6896bed6-d84d-416e-967a-9dcc1a430441",
+    "name" : "bootstrap-theme.css",
+    "type" : "css",
+    "order" : 2,
+    "external" : false
+  }, {
     "id" : "36ea062b-8482-434f-a478-3e76c0da6c2f",
     "name" : "style.css",
     "type" : "css",
     "order" : 0,
+    "external" : false
+  }, {
+    "id" : "d543dd8a-952f-4e22-9716-4a36a730230c",
+    "name" : "Fixedsys500c.woff",
+    "type" : "css",
+    "order" : 7,
+    "external" : false
+  }, {
+    "id" : "489eda53-00a9-407b-8757-0bb554d53c12",
+    "name" : "Fixedsys500c.ttf",
+    "type" : "css",
+    "order" : 6,
     "external" : false
   } ],
   "inactiveAssets" : [ ],

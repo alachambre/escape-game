@@ -1,0 +1,434 @@
+{
+  "designerVersion" : "1.9.32",
+  "id" : "setScoreFragment",
+  "name" : "setScoreFragment",
+  "lastUpdate" : 1557387682970,
+  "rows" : [ [ {
+    "type" : "formContainer",
+    "dimension" : {
+      "xs" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "678526c8-e85b-4fa5-987d-a430a4ad3a15",
+    "hasValidationError" : false,
+    "id" : "pbFormContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "61e4a8a9-a276-4aff-a8e8-e18381a6d6e4",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Félicitation!"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "ff01f950-3d7a-4aff-ba24-3a92e1d0b538",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Serlectionner l'équipe gagnante"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Nom d'équipe"
+          },
+          "availableValues" : {
+            "type" : "expression",
+            "value" : "teams"
+          },
+          "displayedKey" : {
+            "type" : "constant",
+            "value" : "name"
+          },
+          "returnedKey" : {
+            "type" : "constant",
+            "value" : "persistenceId"
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "formInput.id"
+          }
+        },
+        "reference" : "69de4106-a3d1-4214-a66e-d085cf0e5bf9",
+        "hasValidationError" : false,
+        "id" : "pbSelect"
+      } ], [ {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!formInput.id"
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "a0759ca5-06ff-43e8-9cfc-3dd9e1f75d09",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 6,
+            "lg" : 6
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Minutes"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formInput.minutes"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "number"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "2c96b182-e6f7-496c-ad66-4563de2585d0",
+          "hasValidationError" : false,
+          "id" : "pbInput"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 6,
+            "lg" : 6
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Secondes"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formInput.secondes"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "number"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "63248bd1-a8b5-4f3f-a3ed-218303aa6a0d",
+          "hasValidationError" : false,
+          "id" : "pbInput"
+        } ] ]
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Classement"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "info"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Start process"
+          },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "responseStatusCode" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "dataToSend" : {
+            "type" : "expression",
+            "value" : "formOutput"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "closeOnSuccess" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "dataFromError" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : "/bonita/apps/escpaeGameApps/classement"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "collectionPosition" : {
+            "type" : "constant",
+            "value" : "Last"
+          },
+          "valueToAdd" : {
+            "type" : "constant"
+          },
+          "removeItem" : {
+            "type" : "variable"
+          },
+          "processId" : {
+            "type" : "variable",
+            "value" : "processId"
+          }
+        },
+        "reference" : "eecb6f3b-db66-4580-a6cd-872e6b90213f",
+        "hasValidationError" : false,
+        "id" : "customCustomStartProcessButton"
+      } ] ]
+    }
+  } ] ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "teams" : {
+      "type" : "url",
+      "value" : "../API/extension/retrieveTeamsWithoutScore",
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : "{ \"id\" : null, \"minutes\" : 0, \"secondes\" : 0 }",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "var output = { 'id': $data.formInput.id, 'minutes': $data.formInput.minutes, 'secondes': $data.formInput.secondes }; return output;",
+      "exposed" : false
+    },
+    "processId" : {
+      "type" : "expression",
+      "value" : "return $data.process[0].id;",
+      "exposed" : false
+    },
+    "process" : {
+      "type" : "url",
+      "value" : "../API/bpm/process?p=0&c=10&f=name=EnterResult",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

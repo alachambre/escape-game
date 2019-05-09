@@ -6,7 +6,7 @@
             <fields>
                 <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="schedule" nullable="true" collection="false"/>
-                <field type="DOUBLE" length="255" name="score" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Score" fetchType="EAGER" name="score" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints>
                 <uniqueConstraint name="uniqueConstraint">
@@ -25,6 +25,15 @@
                     <queryParameters/>
                 </query>
             </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Score">
+            <fields>
+                <field type="INTEGER" length="255" name="minutes" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="secondes" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
             <indexes/>
         </businessObject>
     </businessObjects>

@@ -1,0 +1,335 @@
+/* Add margin bottom and top to each widgets */
+.component {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+/* Set cursor to pointer on table with selectable rows */
+.table-hover tr {
+    cursor: pointer;
+}
+
+/* Set a red border to invalid input fields in forms */
+input[type='text'].ng-invalid.ng-dirty, input[type='email'].ng-invalid.ng-dirty,
+input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-dirty {
+  border-color: #C00;
+  border-width: 1px;
+}
+
+/* Add a red star after required inputs */
+.control-label--required:after {
+  content: "*";
+  color: #C00;
+}
+.btn-invalid{
+    border-color: #C00;
+    border-width: 1px;
+}
+
+.bonita-modal{
+    overflow-y: auto;
+}
+
+.modal-open .datepicker,
+.modal-open .timepicker {
+    z-index: 9999;
+}
+
+.noMargin{
+    margin: 0;
+}
+
+.noPadding{
+    padding: 0;    
+}
+
+.colorWhite{
+	color: #fff;
+}
+
+.colorBlue{
+	color: #0b4361;
+}
+
+.colorGray{
+    color  : #95a5a6;
+}
+
+.colorLightBlue{
+    background: #337ab7;
+}
+
+.colorRed{
+    color: #dd0033;
+}
+
+.fontSize-1{
+    font-size: 0.8em;
+}
+
+.marginTop-0{
+    margin-top: 0;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.paddingLeft-4{
+    padding-left: 4em;
+}
+.width-100{
+    width: 100px;    
+}
+
+.customPadding{
+    padding: 10px 6px 0 0;    
+}
+
+.noPadding{
+    padding: 0;    
+}
+
+.modalActions{
+    position: absolute;
+}
+
+.modalActions :nth-child(1){
+    right:60px;
+}
+
+.modalActions :nth-child(2){
+    right:30px;
+}
+
+.modalActions :nth-child(3){
+    right:0;
+}
+
+.mt-n20{
+    margin-top: -20px;
+}
+
+.marginY-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.valign-top{
+    vertical-align: top;
+}
+.itemContainer{
+    /*padding: 0px 20px 10px 20px;*/
+    pointer-events: none;
+}
+
+.scrollInBody{
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+.app-item {
+    /*border: 2px solid lightgray;
+    overflow: hidden;
+    border-radius: 4px;*/
+}
+
+.itemContainer > * {
+    border-radius: 5px;
+    background: #fff;
+    padding: 1rem 1rem;
+    opacity: 0.9;
+    pointer-events: auto;
+    transition: 300ms opacity, 300ms transform;
+}
+
+/*
+
+.mainContainer:hover .itemContainer {
+  filter:blur(3px);
+  opacity:.3;
+  transform: scale(.98);
+  box-shadow:none;
+}
+
+.mainContainer:hover .itemContainer:hover {
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+}
+*/
+
+.height-6{
+    height: 6em;
+    max-height: 6em;
+}
+
+
+.circle{
+    margin: 0 auto;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 1px solid #6e6f6b;
+	/*filter:drop-shadow(18px 10px 8px #6e6f6b);*/
+}
+
+.itemImage{
+	width: 100%;
+	filter: grayscale(1);
+	transform: translate(15%, 15%);
+	opacity: 0.7;
+}
+
+.modalItemImage{
+	width: 60%;
+    transform: translate(15%, 15%);
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.modalItemTitle{
+	transform: translateX(-4%);
+}
+
+.itemName{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itemDescription {
+    overflow: hidden;
+    position: relative; 
+    line-height: 1.3em;
+    max-height: 2.6em; 
+    margin-right: -1em;
+    padding-right: 1em;
+    font-size: 0.89em;
+    vertical-align: text-top;
+    text-align: justify;
+}
+
+.itemDescription:before {
+    content: '...';
+    position: absolute;
+    right: 3px;
+    bottom: 0;
+}
+
+.itemDescription:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+}
+
+.iconContainer{
+    align-items: center;
+}
+
+.iconImage{
+	width: 40%;
+/*	transform: translate(10%, 10%); */
+	filter: brightness(0) invert(100%);
+	cursor: pointer;
+}
+
+.glyphicon:hover{
+    cursor: pointer;
+}
+
+.noBorder{
+    border: none;
+}
+
+.modalTitle{
+    background: #0b4361;
+}
+
+.fontBold *{
+    font-weight: bold;
+}
+
+.customButton button{
+    width: 100px;
+}
+
+@media(min-width:1200px){
+    .itemImage{
+    	transform: translate(20%, 10%);
+    }    
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .itemName{
+       width: 175px;
+    }
+    
+    .itemDescription{
+       width: 375px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .itemName{
+      width: 160px;
+    }
+    
+    .itemImage {
+        width: calc(100% + 15px);
+        transform: translate(0%, 15%);
+    }
+    
+}
+
+
+@media (max-width: 767px){
+    
+    .itemImage {
+        position: absolute;
+        width: calc(100% + 5px);
+        transform: translate(-30%, 15%);
+    }
+    
+    .circle{
+        height: 60px;
+    	width: 60px;
+    }
+    
+    .itemName {
+        width: 160px;
+    }
+    
+    .itemDescription{
+        width: 155%;
+        transform: translate(-31%, 55%);
+        max-height: 2.8em;
+    }
+    
+    .more{
+        position: relative;
+        right: -10px;
+        padding: 0;
+    }
+    
+     p{
+        margin: 0 0 5px;
+    }
+}
+
+.myPadding{
+    padding-bottom: 20px;
+}
+
+.tabPolice{
+    font-size: 40px;
+    line-height: 40px;
+}

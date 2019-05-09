@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
-    <application token="escpaeGameApps" version="1.0" profile="User" homePage="classement" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_myCustomTheme">
-        <displayName>Bonitasoft Escape Game</displayName>
+    <application token="escpaeGameApps" version="1.0" profile="User" homePage="classement" state="ACTIVATED" layout="custompage_layout90s" theme="custompage_myCustomTheme">
+        <displayName></displayName>
         <applicationPages>
-            <applicationPage customPage="custompage_classement" token="classement"/>
+            <applicationPage customPage="custompage_TeamClassementPage" token="classement"/>
         </applicationPages>
         <applicationMenus/>
     </application>
