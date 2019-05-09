@@ -97,10 +97,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_0yEGcWILEemZooB5Fg4LYA" name="team" content="team" type="TYPE_VARIABLE" returnType="com.company.model.Team">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JizKcGIMEemZooB5Fg4LYA" name="team" dataType="_3woVE2IBEemZooB5Fg4LYA" className="com.company.model.Team"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_0yEGcmILEemZooB5Fg4LYA" name="setScore" content="def theTeam = teamDAO.findByPersistenceId(id)&#xA;theTeam.setScore(score)&#xA;theTeam" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Team">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_PmlR0GIMEemZooB5Fg4LYA" name="teamDAO" content="teamDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.TeamDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_PmlR0WIMEemZooB5Fg4LYA" name="id" dataType="_3woVDmIBEemZooB5Fg4LYA"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_PmlR0mIMEemZooB5Fg4LYA" name="score" dataType="_3woVD2IBEemZooB5Fg4LYA"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_0yEGcmILEemZooB5Fg4LYA" name="setScore" content="import com.company.model.Score&#xA;&#xA;def theTeam = teamDAO.findByPersistenceId(id)&#xA;&#xA;def score = new Score()&#xA;score.minutes = minutes&#xA;score.secondes = secondes&#xA;theTeam.setScore(score)&#xA;&#xA;theTeam" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Team">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_gveVAHIpEemx558AukpDjA" name="teamDAO" content="teamDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.TeamDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_gveVAXIpEemx558AukpDjA" name="minutes" dataType="_3woVDWIBEemZooB5Fg4LYA"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_gveVAnIpEemx558AukpDjA" name="id" dataType="_3woVDmIBEemZooB5Fg4LYA"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_gveVA3IpEemx558AukpDjA" name="secondes" dataType="_3woVDWIBEemZooB5Fg4LYA"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_0yEGc2ILEemZooB5Fg4LYA" type="ASSIGNMENT"/>
           </operations>
@@ -118,15 +119,22 @@
           </referencedElements>
         </defaultValue>
       </data>
-      <data xmi:type="process:Data" xmi:id="_tiqggGILEemZooB5Fg4LYA" name="score" dataType="_3woVD2IBEemZooB5Fg4LYA">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_tiqggWILEemZooB5Fg4LYA" name="score" content="score" type="TYPE_CONTRACT_INPUT" returnType="java.lang.Double">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_tiqggmILEemZooB5Fg4LYA" name="score" type="DECIMAL">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_tiqgg2ILEemZooB5Fg4LYA"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_IT68gGIMEemZooB5Fg4LYA" name="team" dataType="_3woVE2IBEemZooB5Fg4LYA" className="com.company.model.Team">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_IT68gWIMEemZooB5Fg4LYA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_IwLDQHIpEemx558AukpDjA" name="minutes" dataType="_3woVDWIBEemZooB5Fg4LYA">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_IwLqUHIpEemx558AukpDjA" name="minutes" content="minutes" type="TYPE_CONTRACT_INPUT" returnType="java.lang.Integer">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_KGJXsHIpEemx558AukpDjA" name="minutes" type="INTEGER">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_KGJ-wHIpEemx558AukpDjA"/>
           </referencedElements>
         </defaultValue>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_IT68gGIMEemZooB5Fg4LYA" name="team" dataType="_3woVE2IBEemZooB5Fg4LYA" className="com.company.model.Team">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_IT68gWIMEemZooB5Fg4LYA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      <data xmi:type="process:Data" xmi:id="_Mos0AHIpEemx558AukpDjA" name="secondes" dataType="_3woVDWIBEemZooB5Fg4LYA">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Mos0AXIpEemx558AukpDjA" name="secondes" content="secondes" type="TYPE_CONTRACT_INPUT" returnType="java.lang.Integer">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_Mos0AnIpEemx558AukpDjA" name="secondes" type="INTEGER">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_Mos0A3IpEemx558AukpDjA"/>
+          </referencedElements>
+        </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_ud-PD2IHEemZooB5Fg4LYA">
         <targetForm xmi:type="expression:Expression" xmi:id="_SwNVMGIMEemZooB5Fg4LYA" name="setScore" content="61f62102-e46c-429f-9f97-672aa8d7d2ed" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -167,8 +175,11 @@
         <inputs xmi:type="process:ContractInput" xmi:id="_JzgK0GIKEemZooB5Fg4LYA" name="id" type="LONG">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_JzgK0WIKEemZooB5Fg4LYA"/>
         </inputs>
-        <inputs xmi:type="process:ContractInput" xmi:id="_L5r0MGIKEemZooB5Fg4LYA" name="score" type="DECIMAL">
-          <mapping xmi:type="process:ContractInputMapping" xmi:id="_L5r0MWIKEemZooB5Fg4LYA"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_-2H08HIoEemx558AukpDjA" name="minutes" type="INTEGER">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_-2H08XIoEemx558AukpDjA"/>
+        </inputs>
+        <inputs xmi:type="process:ContractInput" xmi:id="_AV17QHIpEemx558AukpDjA" name="secondes" type="INTEGER">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_AV17QXIpEemx558AukpDjA"/>
         </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ud-PAGIHEemZooB5Fg4LYA">

@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.32",
   "id" : "setScoreFragment",
   "name" : "setScoreFragment",
-  "lastUpdate" : 1557243885988,
+  "lastUpdate" : 1557387682970,
   "rows" : [ [ {
     "type" : "formContainer",
     "dimension" : {
@@ -131,95 +131,179 @@
         "hasValidationError" : false,
         "id" : "pbSelect"
       } ], [ {
-        "type" : "component",
+        "type" : "container",
         "dimension" : {
-          "md" : 12,
-          "sm" : 12,
           "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
           "lg" : 12
         },
         "propertyValues" : {
-          "hidden" : {
-            "type" : "expression",
-            "value" : "!formInput.id"
-          },
           "cssClasses" : {
             "type" : "constant",
             "value" : ""
           },
-          "widgetId" : {
-            "type" : "constant",
-            "value" : "pbInput"
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!formInput.id"
           },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 1
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Temps"
-          },
-          "type" : {
-            "type" : "constant",
-            "value" : "number"
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "placeholder" : {
-            "type" : "constant"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          },
-          "class" : {
-            "type" : "constant",
-            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
-          },
-          "dimension" : {
-            "type" : "constant",
-            "value" : 12
-          },
-          "value" : {
+          "repeatedCollection" : {
             "type" : "variable",
-            "value" : "formInput.score"
-          },
-          "minLength" : {
-            "type" : "constant",
             "value" : ""
-          },
-          "maxLength" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "min" : {
-            "type" : "constant"
-          },
-          "max" : {
-            "type" : "constant"
-          },
-          "step" : {
-            "type" : "constant",
-            "value" : 1
           }
         },
-        "reference" : "5bc1cd23-fbcc-432e-940f-658dae7e4cc2",
+        "reference" : "a0759ca5-06ff-43e8-9cfc-3dd9e1f75d09",
         "hasValidationError" : false,
-        "id" : "pbInput"
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 6,
+            "lg" : 6
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Minutes"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formInput.minutes"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "number"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "2c96b182-e6f7-496c-ad66-4563de2585d0",
+          "hasValidationError" : false,
+          "id" : "pbInput"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 6,
+            "lg" : 6
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Secondes"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formInput.secondes"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "number"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "63248bd1-a8b5-4f3f-a3ed-218303aa6a0d",
+          "hasValidationError" : false,
+          "id" : "pbInput"
+        } ] ]
       } ], [ {
         "type" : "component",
         "dimension" : {
@@ -321,17 +405,17 @@
   "data" : {
     "teams" : {
       "type" : "url",
-      "value" : "../API/bdm/businessData/com.company.model.Team?q=find&p=0&c=100",
+      "value" : "../API/extension/retrieveTeamsWithoutScore",
       "exposed" : false
     },
     "formInput" : {
       "type" : "json",
-      "value" : "{ \"id\" : null, \"score\" : 0 }",
+      "value" : "{ \"id\" : null, \"minutes\" : 0, \"secondes\" : 0 }",
       "exposed" : false
     },
     "formOutput" : {
       "type" : "expression",
-      "value" : "var output = { 'id': $data.formInput.id, 'score': $data.formInput.score }; return output;",
+      "value" : "var output = { 'id': $data.formInput.id, 'minutes': $data.formInput.minutes, 'secondes': $data.formInput.secondes }; return output;",
       "exposed" : false
     },
     "processId" : {

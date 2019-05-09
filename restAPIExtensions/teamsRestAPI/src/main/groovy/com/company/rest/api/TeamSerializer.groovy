@@ -15,7 +15,7 @@ class TeamSerializer extends JsonSerializer<Team>{
 		
 		jgen.writeStringField("name", team.name)
 		jgen.writeStringField("schedule", team.schedule.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME))
-		jgen.writeNumberField("score", team.score)
+//		jgen.writeObjectField("score", team.score) 
 		
 		jgen.writeEndObject()
 	}

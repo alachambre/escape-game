@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "TeamClassementPage",
   "name" : "TeamClassementPage",
-  "lastUpdate" : 1557245038979,
+  "lastUpdate" : 1557388333766,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -358,7 +358,7 @@
                     },
                     "text" : {
                       "type" : "interpolation",
-                      "value" : "<p class=\"h1\">{{$item.score}}' 00\"</p>"
+                      "value" : "<p class=\"h1\">{{$item.score.minutes}}' {{$item.score.secondes}}\"</p>"
                     },
                     "alignment" : {
                       "type" : "constant",
@@ -429,7 +429,7 @@
                 },
                 "repeatedCollection" : {
                   "type" : "variable",
-                  "value" : "teams"
+                  "value" : "teamsWithoutScore"
                 }
               },
               "reference" : "22b3a9fd-ce8b-46b9-8843-02e571e0a8ff",
@@ -449,8 +449,8 @@
                     "value" : ""
                   },
                   "hidden" : {
-                    "type" : "expression",
-                    "value" : "$item.score"
+                    "type" : "constant",
+                    "value" : false
                   },
                   "repeatedCollection" : {
                     "type" : "variable",
@@ -514,8 +514,8 @@
                   "dimension" : {
                     "xs" : 12,
                     "sm" : 12,
-                    "md" : 5,
-                    "lg" : 5
+                    "md" : 6,
+                    "lg" : 6
                   },
                   "propertyValues" : {
                     "cssClasses" : {
@@ -563,8 +563,8 @@
                   "dimension" : {
                     "xs" : 12,
                     "sm" : 12,
-                    "md" : 5,
-                    "lg" : 5
+                    "md" : 6,
+                    "lg" : 6
                   },
                   "propertyValues" : {
                     "cssClasses" : {
@@ -607,93 +607,6 @@
                   "reference" : "3ffa5a66-0d0b-4575-807f-c9b446e11efa",
                   "hasValidationError" : false,
                   "id" : "pbText"
-                }, {
-                  "type" : "component",
-                  "dimension" : {
-                    "xs" : 12,
-                    "sm" : 12,
-                    "md" : 2,
-                    "lg" : 2
-                  },
-                  "propertyValues" : {
-                    "cssClasses" : {
-                      "type" : "constant",
-                      "value" : ""
-                    },
-                    "hidden" : {
-                      "type" : "constant",
-                      "value" : false
-                    },
-                    "disabled" : {
-                      "type" : "constant",
-                      "value" : false
-                    },
-                    "label" : {
-                      "type" : "interpolation",
-                      "value" : "Partie terminée"
-                    },
-                    "alignment" : {
-                      "type" : "constant",
-                      "value" : "left"
-                    },
-                    "buttonStyle" : {
-                      "type" : "constant",
-                      "value" : "info"
-                    },
-                    "action" : {
-                      "type" : "constant",
-                      "value" : "Open modal"
-                    },
-                    "assign" : {
-                      "type" : "constant",
-                      "value" : false
-                    },
-                    "url" : {
-                      "type" : "interpolation"
-                    },
-                    "responseStatusCode" : {
-                      "type" : "variable",
-                      "value" : ""
-                    },
-                    "dataToSend" : {
-                      "type" : "constant"
-                    },
-                    "dataFromSuccess" : {
-                      "type" : "variable",
-                      "value" : ""
-                    },
-                    "closeOnSuccess" : {
-                      "type" : "constant",
-                      "value" : false
-                    },
-                    "dataFromError" : {
-                      "type" : "variable",
-                      "value" : ""
-                    },
-                    "targetUrlOnSuccess" : {
-                      "type" : "interpolation"
-                    },
-                    "collectionToModify" : {
-                      "type" : "variable"
-                    },
-                    "modalId" : {
-                      "type" : "constant",
-                      "value" : "setScore"
-                    },
-                    "collectionPosition" : {
-                      "type" : "constant",
-                      "value" : "Last"
-                    },
-                    "valueToAdd" : {
-                      "type" : "constant"
-                    },
-                    "removeItem" : {
-                      "type" : "variable"
-                    }
-                  },
-                  "reference" : "0e818643-2511-41de-b43d-6264255f7595",
-                  "hasValidationError" : false,
-                  "id" : "pbButton"
                 } ] ]
               } ] ]
             } ] ]
@@ -714,6 +627,55 @@
                 "type" : "constant",
                 "value" : false
               },
+              "labelHidden" : {
+                "type" : "constant",
+                "value" : true
+              },
+              "label" : {
+                "type" : "interpolation",
+                "value" : "Default label"
+              },
+              "labelPosition" : {
+                "type" : "constant",
+                "value" : "top"
+              },
+              "labelWidth" : {
+                "type" : "constant",
+                "value" : 4
+              },
+              "allowHTML" : {
+                "type" : "constant",
+                "value" : true
+              },
+              "text" : {
+                "type" : "interpolation",
+                "value" : "</ br>"
+              },
+              "alignment" : {
+                "type" : "constant",
+                "value" : "left"
+              }
+            },
+            "reference" : "d5584af7-edff-40b1-bbd3-dc8babc44349",
+            "hasValidationError" : false,
+            "id" : "pbText"
+          } ], [ {
+            "type" : "component",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 10,
+              "lg" : 10
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : ""
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
               "disabled" : {
                 "type" : "constant",
                 "value" : false
@@ -724,7 +686,7 @@
               },
               "alignment" : {
                 "type" : "constant",
-                "value" : "center"
+                "value" : "right"
               },
               "buttonStyle" : {
                 "type" : "constant",
@@ -782,6 +744,93 @@
               }
             },
             "reference" : "ea5c386b-ea3c-4970-80a0-fcda0d0e97da",
+            "hasValidationError" : false,
+            "id" : "pbButton"
+          }, {
+            "type" : "component",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 2,
+              "lg" : 2
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : ""
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "disabled" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "label" : {
+                "type" : "interpolation",
+                "value" : "Partie terminée"
+              },
+              "alignment" : {
+                "type" : "constant",
+                "value" : "right"
+              },
+              "buttonStyle" : {
+                "type" : "constant",
+                "value" : "info"
+              },
+              "action" : {
+                "type" : "constant",
+                "value" : "Open modal"
+              },
+              "assign" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "url" : {
+                "type" : "interpolation"
+              },
+              "responseStatusCode" : {
+                "type" : "variable",
+                "value" : ""
+              },
+              "dataToSend" : {
+                "type" : "constant"
+              },
+              "dataFromSuccess" : {
+                "type" : "variable",
+                "value" : ""
+              },
+              "closeOnSuccess" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "dataFromError" : {
+                "type" : "variable",
+                "value" : ""
+              },
+              "targetUrlOnSuccess" : {
+                "type" : "interpolation"
+              },
+              "collectionToModify" : {
+                "type" : "variable"
+              },
+              "modalId" : {
+                "type" : "constant",
+                "value" : "setScore"
+              },
+              "collectionPosition" : {
+                "type" : "constant",
+                "value" : "Last"
+              },
+              "valueToAdd" : {
+                "type" : "constant"
+              },
+              "removeItem" : {
+                "type" : "variable"
+              }
+            },
+            "reference" : "0e818643-2511-41de-b43d-6264255f7595",
             "hasValidationError" : false,
             "id" : "pbButton"
           } ] ]
@@ -1017,6 +1066,11 @@
     "myTab" : {
       "type" : "expression",
       "value" : "return {\n    tab1: {\n        dynamicTitle: \"<b>Classement des équipes</b>\",\n        allowHtml: true,\n        hidden: false,\n        disabled: false,\n        cssClasses: \"tabPolice\"\n    },\n    tab2: {\n        dynamicTitle: \"<b>Parties à venir ...</b>\",\n        allowHtml: true,\n        hidden: false,\n        disabled: false,\n        cssClasses: \"tabPolice\"\n    }\n};",
+      "exposed" : false
+    },
+    "teamsWithoutScore" : {
+      "type" : "url",
+      "value" : "../API/extension/retrieveTeamsWithoutScore",
       "exposed" : false
     }
   },
