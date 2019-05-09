@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "TeamClassementPage",
   "name" : "TeamClassementPage",
-  "lastUpdate" : 1557413463814,
+  "lastUpdate" : 1557421259181,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -509,7 +509,7 @@
             "id" : "pbButton"
           } ] ]
         },
-        "title" : "Classement des équipes",
+        "title" : "TOP 3 des équipes!",
         "tabId" : "tab1"
       }, {
         "container" : {
@@ -1020,7 +1020,7 @@
       },
       "size" : {
         "type" : "constant",
-        "value" : ""
+        "value" : "lg"
       },
       "animation" : {
         "type" : "constant",
@@ -1082,7 +1082,7 @@
       },
       "size" : {
         "type" : "constant",
-        "value" : ""
+        "value" : "lg"
       },
       "animation" : {
         "type" : "constant",
@@ -1144,7 +1144,7 @@
       },
       "size" : {
         "type" : "constant",
-        "value" : ""
+        "value" : "lg"
       },
       "animation" : {
         "type" : "constant",

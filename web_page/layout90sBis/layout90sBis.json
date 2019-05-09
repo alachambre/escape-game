@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.7.25",
   "id" : "layout90sBis",
   "name" : "layout90sBis",
-  "lastUpdate" : 1557410517373,
+  "lastUpdate" : 1557420735842,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -77,7 +77,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "<br/>\n<br/>\n<br/>\n<p class=\"colorTitle\">BONITASOFT ESCAPE GAME ANIMATION</p>\n<br/>\n<br/>\n<br/>"
+            "value" : "<br/>\n<br/>\n<br/>\n<p class=\"colorTitle\">⏰ BONITASOFT ESCAPE GAME - INSCRIPTIONS ⏰</p>\n<br/>\n<br/>\n<br/>"
           },
           "alignment" : {
             "type" : "constant",
@@ -229,7 +229,7 @@
         },
         "text" : {
           "type" : "interpolation",
-          "value" : "Powered by"
+          "value" : "<p class=\"h3\">Powered by</p>"
         },
         "alignment" : {
           "type" : "constant",
@@ -261,7 +261,7 @@
         "xs" : 12,
         "sm" : 12,
         "md" : 4,
-        "lg" : 4
+        "lg" : 5
       },
       "propertyValues" : {
         "cssClasses" : {
@@ -307,7 +307,7 @@
         },
         "assetName" : {
           "type" : "constant",
-          "value" : "logo.png"
+          "value" : "logoRouge.png"
         },
         "alt" : {
           "type" : "interpolation"
@@ -322,7 +322,7 @@
         "xs" : 12,
         "sm" : 12,
         "md" : 4,
-        "lg" : 4
+        "lg" : 3
       },
       "propertyValues" : {
         "cssClasses" : {
@@ -382,22 +382,10 @@
     "id" : "pbFileViewer"
   } ] ],
   "assets" : [ {
-    "id" : "9300e21b-5209-4e62-b1c5-f208af822434",
-    "name" : "Fixedsys500c.otf",
-    "type" : "css",
-    "order" : 11,
-    "external" : false
-  }, {
     "id" : "5183f0fd-6bf3-467c-a2c0-2c13dc332e9c",
     "name" : "animation386.js",
     "type" : "js",
     "order" : 9,
-    "external" : false
-  }, {
-    "id" : "4d4aa1e1-b69b-4600-8300-3732ee5eb9e1",
-    "name" : "Fixedsys500c.svg",
-    "type" : "css",
-    "order" : 12,
     "external" : false
   }, {
     "id" : "e9512b72-26da-4646-ae30-a32f4a362f0f",
@@ -412,16 +400,40 @@
     "order" : 3,
     "external" : false
   }, {
-    "id" : "da2ff6d7-72e0-4ec1-9c5a-7372b83cdc7a",
-    "name" : "Fixedsys500c.ttf",
-    "type" : "css",
-    "order" : 13,
-    "external" : false
-  }, {
     "id" : "2007621b-afa8-48ec-846f-f4d78ce90b8a",
     "name" : "layout.css",
     "type" : "css",
     "order" : 1,
+    "external" : false
+  }, {
+    "id" : "2a2ac6a1-2895-4a40-a639-f97d21a11de1",
+    "name" : "logo.png",
+    "type" : "img",
+    "order" : 16,
+    "external" : false
+  }, {
+    "id" : "9300e21b-5209-4e62-b1c5-f208af822434",
+    "name" : "Fixedsys500c.otf",
+    "type" : "css",
+    "order" : 11,
+    "external" : false
+  }, {
+    "id" : "4d4aa1e1-b69b-4600-8300-3732ee5eb9e1",
+    "name" : "Fixedsys500c.svg",
+    "type" : "css",
+    "order" : 12,
+    "external" : false
+  }, {
+    "id" : "8600b059-e2a0-4fc6-a35c-aa026d52c45a",
+    "name" : "logoRouge.png",
+    "type" : "img",
+    "order" : 17,
+    "external" : false
+  }, {
+    "id" : "da2ff6d7-72e0-4ec1-9c5a-7372b83cdc7a",
+    "name" : "Fixedsys500c.ttf",
+    "type" : "css",
+    "order" : 13,
     "external" : false
   }, {
     "id" : "96e7d863-f4f5-4839-9026-1d9bdd8e4853",
@@ -434,12 +446,6 @@
     "name" : "bootstrap.js",
     "type" : "js",
     "order" : 15,
-    "external" : false
-  }, {
-    "id" : "2a2ac6a1-2895-4a40-a639-f97d21a11de1",
-    "name" : "logo.png",
-    "type" : "img",
-    "order" : 16,
     "external" : false
   }, {
     "id" : "27b2007f-d336-4f20-b640-5810f7a8af54",
