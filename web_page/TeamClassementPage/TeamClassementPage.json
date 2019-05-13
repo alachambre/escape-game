@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "TeamClassementPage",
   "name" : "TeamClassementPage",
-  "lastUpdate" : 1557421259181,
+  "lastUpdate" : 1557737770472,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -1263,7 +1263,7 @@
     },
     "myTab" : {
       "type" : "expression",
-      "value" : "return {\n    tab1: {\n        dynamicTitle: \"<b>Classement des équipes</b>\",\n        allowHtml: true,\n        hidden: false,\n        disabled: false,\n        cssClasses: \"tabPolice\"\n    },\n    tab2: {\n        dynamicTitle: \"<b>Parties à venir ...</b>\",\n        allowHtml: true,\n        hidden: false,\n        disabled: false,\n        cssClasses: \"tabPolice\"\n    }\n};",
+      "value" : "return {\n    tab1: {\n        dynamicTitle: \"<b>TOP3 des équipes !</b>\",\n        allowHtml: true,\n        hidden: false,\n        disabled: false,\n        cssClasses: \"tabPolice\"\n    },\n    tab2: {\n        dynamicTitle: \"<b>Parties à venir ...</b>\",\n        allowHtml: true,\n        hidden: false,\n        disabled: false,\n        cssClasses: \"tabPolice\"\n    }\n};",
       "exposed" : false
     },
     "teamsWithoutScore" : {
