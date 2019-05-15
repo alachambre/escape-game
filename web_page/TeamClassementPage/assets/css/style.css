@@ -352,3 +352,64 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 .btn {
     font-size: 20px
 }
+
+.colorScore {
+  color:#313131;
+  -webkit-animation:colorchange 10s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+
+    color: Coral;
+  }
+
+  10% {
+
+    color: GreenYellow;
+  }
+
+  20% {
+
+    color: Crimson;
+  }
+
+  30% {
+
+    color: Aqua;
+  }
+
+  40% {
+
+    color: Ivory;
+  }
+
+  50% {
+
+    color: Orchid;
+  }
+
+  60% {
+
+    color: Lime;
+  }
+
+  70% {
+
+    color: DeepPink;
+  }
+  80% {
+
+    color: Orange;
+  }
+
+  90% {
+
+    color: PaleTurquoise;
+  }
+
+  100% {
+
+    color: FireBrick;
+  }
+}

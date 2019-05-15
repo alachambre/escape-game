@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "TeamClassementPage",
   "name" : "TeamClassementPage",
-  "lastUpdate" : 1557737770472,
+  "lastUpdate" : 1557914131579,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -407,7 +407,7 @@
                     },
                     "text" : {
                       "type" : "interpolation",
-                      "value" : "<p class=\"h1\">{{$item.score.minutes}}' {{$item.score.secondes}}\"</p>"
+                      "value" : "<p class=\"h1 colorScore\">{{$item.score.minutes}}' {{$item.score.secondes}}\"</p>"
                     },
                     "alignment" : {
                       "type" : "constant",

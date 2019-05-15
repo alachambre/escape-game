@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.7.25",
   "id" : "layout90sBis",
   "name" : "layout90sBis",
-  "lastUpdate" : 1557911035247,
+  "lastUpdate" : 1557915292316,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -406,10 +406,10 @@
     "order" : 1,
     "external" : false
   }, {
-    "id" : "2a2ac6a1-2895-4a40-a639-f97d21a11de1",
-    "name" : "logo.png",
+    "id" : "16c60adc-d3e7-4cec-bb39-3f5c5ce66ddd",
+    "name" : "computer.png",
     "type" : "img",
-    "order" : 16,
+    "order" : 17,
     "external" : false
   }, {
     "id" : "9300e21b-5209-4e62-b1c5-f208af822434",
@@ -418,16 +418,16 @@
     "order" : 11,
     "external" : false
   }, {
+    "id" : "c644bd80-84c8-44fc-8b59-8db783781c80",
+    "name" : "logo.png",
+    "type" : "img",
+    "order" : 16,
+    "external" : false
+  }, {
     "id" : "4d4aa1e1-b69b-4600-8300-3732ee5eb9e1",
     "name" : "Fixedsys500c.svg",
     "type" : "css",
     "order" : 12,
-    "external" : false
-  }, {
-    "id" : "8600b059-e2a0-4fc6-a35c-aa026d52c45a",
-    "name" : "logoRouge.png",
-    "type" : "img",
-    "order" : 17,
     "external" : false
   }, {
     "id" : "da2ff6d7-72e0-4ec1-9c5a-7372b83cdc7a",
