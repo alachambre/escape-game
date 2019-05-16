@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.32",
   "id" : "setScoreFragment",
   "name" : "setScoreFragment",
-  "lastUpdate" : 1557389544529,
+  "lastUpdate" : 1557999449273,
   "rows" : [ [ {
     "type" : "formContainer",
     "dimension" : {
@@ -49,22 +49,38 @@
             "type" : "constant",
             "value" : false
           },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
           "text" : {
             "type" : "interpolation",
-            "value" : "Félicitation!"
-          },
-          "level" : {
-            "type" : "constant",
-            "value" : "Level 2"
+            "value" : "<p class = \"titleBig\">Félicitations!</p>"
           },
           "alignment" : {
             "type" : "constant",
             "value" : "center"
           }
         },
-        "reference" : "ff01f950-3d7a-4aff-ba24-3a92e1d0b538",
+        "reference" : "411369c7-f60f-472f-8d0d-892679bdb938",
         "hasValidationError" : false,
-        "id" : "pbTitle"
+        "id" : "pbText"
       } ], [ {
         "type" : "component",
         "dimension" : {

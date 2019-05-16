@@ -413,3 +413,24 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     color: FireBrick;
   }
 }
+
+.titleBig {
+    font-size: 30px;
+    padding-top: 8px;
+}
+
+.inputLabel {
+    font-size: 18px;
+    padding-bottom: -10px;
+}
+
+.sectionTitle {
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 8px;
+}
+
+.colorScore {
+    font-size: 45px;
+}

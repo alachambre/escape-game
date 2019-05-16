@@ -2488,18 +2488,19 @@ output {
   padding-top: 0;
   font-size: 18px;
   line-height: 19px;
-  color: #ffffff;
+  color: #000000;
 }
 .form-control {
   display: block;
   width: 100%;
-  height: 19px;
+  height: 25px;
   padding: 0px 0px;
-  line-height: 19px;
+  line-height: 25px;
   color: #ffffff;
-  background-color: #00aaaa;
+  background-color: #9b0c0c;
   background-image: none;
   border: none;
+  font-size: 20px;
 }
 .form-control:focus {
   outline: 0;

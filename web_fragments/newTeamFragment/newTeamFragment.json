@@ -2,63 +2,56 @@
   "designerVersion" : "1.9.32",
   "id" : "newTeamFragment",
   "name" : "newTeamFragment",
-  "lastUpdate" : 1557243847596,
+  "lastUpdate" : 1557999621501,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
-      "md" : 12,
-      "sm" : 12,
       "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
       "lg" : 12
     },
     "propertyValues" : {
-      "labelHidden" : {
+      "cssClasses" : {
         "type" : "constant",
-        "value" : false
+        "value" : ""
       },
       "hidden" : {
         "type" : "constant",
         "value" : false
       },
-      "level" : {
+      "labelHidden" : {
         "type" : "constant",
-        "value" : "Level 1"
-      },
-      "cssClasses" : {
-        "type" : "constant",
-        "value" : ""
-      },
-      "widgetId" : {
-        "type" : "constant",
-        "value" : "pbTitle"
-      },
-      "readOnly" : {
-        "type" : "constant",
-        "value" : false
+        "value" : true
       },
       "label" : {
-        "type" : "interpolation"
+        "type" : "interpolation",
+        "value" : "Default label"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
       },
       "text" : {
         "type" : "interpolation",
-        "value" : "Créer une nouvelle équipe"
+        "value" : "<p class=\"titleBig\">Créer une nouvelle équipe</p>"
       },
       "alignment" : {
         "type" : "constant",
         "value" : "left"
-      },
-      "class" : {
-        "type" : "constant",
-        "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TitleWidget"
-      },
-      "dimension" : {
-        "type" : "constant",
-        "value" : 12
       }
     },
-    "reference" : "36d3ba3d-684a-494f-9b85-6ec2e6d23709",
+    "reference" : "d90c8963-bd3d-4066-9231-42e69f6ccf1a",
     "hasValidationError" : false,
-    "id" : "pbTitle"
+    "id" : "pbText"
   } ], [ {
     "type" : "container",
     "dimension" : {
@@ -152,22 +145,38 @@
             "type" : "constant",
             "value" : false
           },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
           "text" : {
             "type" : "interpolation",
-            "value" : "Nom d'équipe"
-          },
-          "level" : {
-            "type" : "constant",
-            "value" : "Level 4"
+            "value" : "<p class=\"inputLabel\">Nom d'équipe</p>"
           },
           "alignment" : {
             "type" : "constant",
             "value" : "left"
           }
         },
-        "reference" : "9101086e-a64c-40be-aad6-1b44648652a6",
+        "reference" : "9f9b8598-3f28-4207-ac77-0c0f2bcdd64a",
         "hasValidationError" : false,
-        "id" : "pbTitle"
+        "id" : "pbText"
       } ], [ {
         "type" : "component",
         "dimension" : {
@@ -301,22 +310,38 @@
             "type" : "constant",
             "value" : false
           },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
           "text" : {
             "type" : "interpolation",
-            "value" : "Heure de passage"
-          },
-          "level" : {
-            "type" : "constant",
-            "value" : "Level 4"
+            "value" : "<p class=\"inputLabel\">Heure de passage</p>"
           },
           "alignment" : {
             "type" : "constant",
             "value" : "left"
           }
         },
-        "reference" : "f2b50cca-7c37-4d24-82b0-20279d964e3c",
+        "reference" : "b7b3f5f7-c2c0-4a61-8e17-f622c31264f0",
         "hasValidationError" : false,
-        "id" : "pbTitle"
+        "id" : "pbText"
       } ], [ {
         "type" : "component",
         "dimension" : {
