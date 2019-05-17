@@ -15,7 +15,7 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_Kol5YGICEemZooB5Fg4LYA" name="team" dataType="_3woVE2IBEemZooB5Fg4LYA" className="com.company.model.Team">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_XboxU2_oEemwzOGFoINZBA" name="initTeam()" content="def teamVar = new com.company.model.Team()&#xA;teamVar.name = teamInput?.name&#xA;teamVar.schedule = teamInput?.schedule&#xA;return teamVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Team">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_XboxU2_oEemwzOGFoINZBA" name="initTeam()" content="def teamVar = new com.company.model.Team()&#xA;teamVar.name = teamInput?.name&#xA;teamVar.schedule = teamInput?.schedule&#xA;teamVar.contact = teamInput?.contact&#xA;return teamVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Team">
           <referencedElements xmi:type="process:ContractInput" xmi:id="_XbpYYG_oEemwzOGFoINZBA" name="teamInput" type="COMPLEX"/>
         </defaultValue>
       </data>
@@ -54,6 +54,9 @@
         <inputs xmi:type="process:ContractInput" xmi:id="_XboxUG_oEemwzOGFoINZBA" name="teamInput" type="COMPLEX" dataReference="team">
           <inputs xmi:type="process:ContractInput" xmi:id="_XboxUW_oEemwzOGFoINZBA" name="name"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_XboxUm_oEemwzOGFoINZBA" name="schedule" type="LOCALDATETIME"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_zMdhgHh7EemMd77yL94Kww" name="contact">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_zMdhgXh7EemMd77yL94Kww"/>
+          </inputs>
         </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_3woU_GIBEemZooB5Fg4LYA">

@@ -1,0 +1,261 @@
+{
+  "designerVersion" : "1.9.35",
+  "id" : "teamContact",
+  "name" : "teamContact",
+  "lastUpdate" : 1558082555283,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : "winner"
+      }
+    },
+    "reference" : "fd419442-dec2-4474-ad61-e776d6d554e7",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Winner:"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "2683f3f4-aba2-4767-bc1f-d49a4b4110a7",
+      "hasValidationError" : false,
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Default label"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{$item.name}} -> {{$item.contact}}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "ba97ad13-4f13-4bd5-a649-ed5f2efed472",
+      "hasValidationError" : false,
+      "id" : "pbText"
+    } ] ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "36f3e93f-0598-484c-a3de-43ce2e96a242",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "All teams:"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "d34596a0-944b-454a-b54b-40f3f34d5236",
+      "hasValidationError" : false,
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "headers" : {
+          "type" : "constant",
+          "value" : [ "Team name", "contact" ]
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "Bonita API"
+        },
+        "apiUrl" : {
+          "type" : "constant",
+          "value" : "../API/bdm/businessData/com.company.model.Team?q=find&p=0&c=200"
+        },
+        "params" : {
+          "type" : "constant"
+        },
+        "content" : {
+          "type" : "constant"
+        },
+        "columnsKey" : {
+          "type" : "constant",
+          "value" : [ "name", "contact" ]
+        },
+        "sortColumns" : {
+          "type" : "constant"
+        },
+        "selectedRow" : {
+          "type" : "variable",
+          "value" : ""
+        },
+        "pageSize" : {
+          "type" : "constant",
+          "value" : 10
+        },
+        "filter" : {
+          "type" : "constant"
+        }
+      },
+      "reference" : "1b9228ce-9c70-433e-a46e-0c100df97b1a",
+      "hasValidationError" : false,
+      "id" : "pbDataTable"
+    } ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "914a0e3a-9825-433b-a2c1-ebdbb85a74b0",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "eac5fa40-df6d-487a-8e53-41f4f5014e0b",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "winner" : {
+      "type" : "url",
+      "value" : "../API/extension/retrieveFirstTeams?max=1",
+      "exposed" : false
+    },
+    "allTeams" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.Team?q=find&p=0&c=200",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "314ada3a-e582-4e73-a874-1d2057724142",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

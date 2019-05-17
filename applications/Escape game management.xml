@@ -7,4 +7,11 @@
         </applicationPages>
         <applicationMenus/>
     </application>
+    <application token="contact" version="1.0" profile="User" homePage="contact" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Escape game - Teams contact</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_teamContact" token="contact"/>
+        </applicationPages>
+        <applicationMenus/>
+    </application>
 </applications>

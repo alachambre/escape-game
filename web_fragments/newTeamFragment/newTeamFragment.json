@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.32",
   "id" : "newTeamFragment",
   "name" : "newTeamFragment",
-  "lastUpdate" : 1557999621501,
+  "lastUpdate" : 1558081268175,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -167,23 +167,23 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "<p class=\"inputLabel\">Nom d'équipe</p>"
+            "value" : "<p class=\"inputLabel\">Equipe</p>"
           },
           "alignment" : {
             "type" : "constant",
             "value" : "left"
           }
         },
-        "reference" : "9f9b8598-3f28-4207-ac77-0c0f2bcdd64a",
+        "reference" : "c610cff2-4b13-4308-a4ad-ee02d8923e0c",
         "hasValidationError" : false,
         "id" : "pbText"
       } ], [ {
         "type" : "component",
         "dimension" : {
-          "md" : 12,
+          "md" : 6,
           "sm" : 12,
           "xs" : 12,
-          "lg" : 12
+          "lg" : 6
         },
         "propertyValues" : {
           "hidden" : {
@@ -208,7 +208,7 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : "Team name"
+            "value" : "Nom d'équipe"
           },
           "type" : {
             "type" : "constant",
@@ -227,7 +227,8 @@
             "value" : "top"
           },
           "placeholder" : {
-            "type" : "constant"
+            "type" : "constant",
+            "value" : "Nom d'équipe"
           },
           "alignment" : {
             "type" : "constant",
@@ -265,6 +266,81 @@
           }
         },
         "reference" : "25da03c8-0824-49f4-a52b-6e4ac57ef6e0",
+        "hasValidationError" : false,
+        "id" : "pbInput"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Contact"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Email, téléphone ..."
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "formInput.teamInput.contact"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "text"
+          },
+          "min" : {
+            "type" : "constant"
+          },
+          "max" : {
+            "type" : "constant"
+          },
+          "step" : {
+            "type" : "constant",
+            "value" : 1
+          }
+        },
+        "reference" : "108046fe-0a09-4f4c-9a85-4d7350d1c685",
         "hasValidationError" : false,
         "id" : "pbInput"
       } ] ]
@@ -373,11 +449,11 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : ""
+            "value" : "Heure de passage"
           },
           "labelPosition" : {
             "type" : "constant",
-            "value" : "left"
+            "value" : "top"
           },
           "labelWidth" : {
             "type" : "constant",
@@ -436,7 +512,7 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : ""
+            "value" : "{{filler}}"
           },
           "labelPosition" : {
             "type" : "constant",
