@@ -24,8 +24,10 @@ class TeamsWithoutScoreIndex implements RestApiController {
 
 	@Override
 	RestApiResponse doHandle(HttpServletRequest request, RestApiResponseBuilder responseBuilder, RestAPIContext context) {
+		def now = LocalDate.now()
 		def teams = context.getApiClient().getDAO(TeamDAO.class).find(0, 100)
 				.findAll { !it.score }
+				.findAll { Objects.equals(now, it.schedule.toLocalDate()) }
 				.sort { team1, team2 -> team1.schedule.compareTo(team2.schedule) }
 
 		def result = TEAM_MAPPER.writeValueAsString(teams)

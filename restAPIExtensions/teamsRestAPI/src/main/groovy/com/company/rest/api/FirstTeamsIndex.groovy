@@ -1,5 +1,8 @@
 package com.company.rest.api
 
+import java.time.LocalDate
+import java.time.LocalDateTime
+
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -21,8 +24,11 @@ class FirstTeamsIndex implements RestApiController {
 
 	@Override
 	RestApiResponse doHandle(HttpServletRequest request, RestApiResponseBuilder responseBuilder, RestAPIContext context) {
-		List<Team> teams = context.getApiClient().getDAO(TeamDAO.class).find(0, 100)
-				.findAll { it.score };
+		def now = LocalDate.now()
+		List<Team> teams = context.getApiClient().getDAO(TeamDAO.class)
+				.find(0, 100)
+				.findAll { it.score }
+				.findAll { Objects.equals(now, it.schedule.toLocalDate()) }
 
 		teams.sort(comparator)
 		def max = request.getParameter("max") as int
