@@ -342,6 +342,7 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 .second {
     font-size: 30px;
     color: silver;
+    filter: brightness(2);
 }
 
 .third {
@@ -433,4 +434,13 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 
 .colorScore {
     font-size: 45px;
+}
+
+.separator {
+    border-left: dashed yellow;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }

@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.31",
   "id" : "TeamClassementPage",
   "name" : "TeamClassementPage",
-  "lastUpdate" : 1558093699860,
+  "lastUpdate" : 1558096214605,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -452,7 +452,7 @@
       "propertyValues" : {
         "cssClasses" : {
           "type" : "constant",
-          "value" : "separator"
+          "value" : ""
         },
         "hidden" : {
           "type" : "constant",
@@ -752,7 +752,7 @@
       "propertyValues" : {
         "cssClasses" : {
           "type" : "constant",
-          "value" : ""
+          "value" : "myPadding"
         },
         "hidden" : {
           "type" : "constant",

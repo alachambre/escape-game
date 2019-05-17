@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.32",
   "id" : "newTeamFragment",
   "name" : "newTeamFragment",
-  "lastUpdate" : 1558081268175,
+  "lastUpdate" : 1558095527903,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -577,7 +577,7 @@
       },
       "buttonStyle" : {
         "type" : "constant",
-        "value" : "warning"
+        "value" : "info"
       },
       "action" : {
         "type" : "constant",
